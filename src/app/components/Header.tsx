@@ -36,7 +36,7 @@ const Header = () => {
                 </div>
                 <div className="hidden md:flex space-x-3 md:space-x-4 text-lg">
                     <SignedOut>
-                        <SignInButton className="bg-gray-300 rounded shadow-md px-2 py-1 " />
+                        <SignInButton/>
                     </SignedOut>
                     <SignedIn>
                         <UserButton />
@@ -54,7 +54,7 @@ const Header = () => {
                     <Link href="/blog" className="block hover:text-blue-500" onClick={() => setMenuOpen(false)}>Blog</Link>
                     <Link href="/about" className="block hover:text-blue-500" onClick={() => setMenuOpen(false)}>About</Link>
                     <SignedOut>
-                        <SignInButton className="bg-gray-600 text-white  rounded shadow-md  block w-20  text-center" />
+                        <SignInButton />
                     </SignedOut>
                     <SignedIn>
                         <UserButton />
