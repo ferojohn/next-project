@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+
 export default function Banner() {
   return (
-    <div className="bg-gray-200 m-5 h-auto shadow-lg rounded-lg grid grid-cols-12 p-4 gap-4 items-center 
-      md:h-[500px] md:grid-cols-12 md:p-8">
-      <div className="p-4 col-span-12 md:col-span-7 text-center md:text-left md:ml-12">
+    <div className="w-full max-w-[1400px] mx-auto bg-gray-200 m-5 h-auto shadow-lg rounded-lg grid grid-cols-12 p-4 gap-4 items-center md:h-[500px] md:p-8">
+      <div className="p-4 col-span-12 md:col-span-6 text-center md:text-left md:ml-12">
         <h2 className="font-extrabold text-4xl md:text-6xl leading-tight">
           <span className="bg-white inline-block min-w-[100px] px-2 py-1 rounded-md text-center">
             Lets
@@ -24,19 +24,18 @@ export default function Banner() {
             Shop Now
           </Button>
         </Link>
-
       </div>
-      <div className="col-span-12 md:col-span-5 flex justify-center md:justify-end">
-        <div className="relative w-[80%] md:w-full h-auto">
-          <Image
-            src="/assets/images/banner.jpg"
-            alt="banner-img"
-            width={500}
-            height={450}
-            className="object-content rounded-lg shadow-xl transform hover:scale-105 transition duration-300"
-          />
-        </div>
-      </div>
+      <div className="col-span-12 md:col-span-6 flex justify-center md:justify-end">
+  <div className="relative w-full md:w-[90%] md:h-[400px]">
+    <Image
+      src="/assets/images/banner.jpg"
+      alt="banner-img"
+      width={400}
+      height={400} // Adjusted to maintain aspect ratio
+      className="w-full h-full object-contain rounded-lg shadow-xl transform hover:scale-105 transition duration-300"
+    />
+  </div>
+</div>
     </div>
   );
 }

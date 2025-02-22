@@ -32,8 +32,8 @@ export default function Favourite() {
   ];
 
   return (
-    <section className="px-6 py-8">
-      <h2 className="text-4xl font-extrabold  mb-6 relative">
+<section className="w-full max-w-[1200px] mx-auto px-6 py-8">
+<h2 className="text-4xl font-extrabold  mb-6 relative">
         Young’s Favourite <span className="text-yellow-600  absolute text-8xl opacity-30 rounded-t-lg"
           style={{
             left: "17.2rem",
