@@ -9,6 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Image from "next/image";
 
 interface Product{
   id: number,
@@ -65,9 +66,11 @@ export default function ProductList() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex flex-col items-center">
-                <img
+                <Image
                   src={product.image}
                   alt={product.title}
+                  width={32}
+                  height={32}
                   className="w-32 h-32 object-cover rounded-md transform hover:scale-105 transition duration-300"
                 />
                 <p className="text-md font-bold mt-2">${product.price}</p>
